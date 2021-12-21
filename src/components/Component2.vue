@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { useStore } from '../store/cart';
+import { useStore } from '../store/main';
 import { storeToRefs } from 'pinia';
 
 const store = useStore()

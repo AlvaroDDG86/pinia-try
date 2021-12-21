@@ -5,8 +5,8 @@
     <div class="btn-content">
         <ButtonVue @click="changeCount">Increment</ButtonVue>
         <ButtonVue @click="incrementAndChange">Change Two</ButtonVue>
-        <ButtonVue @click="store.random()">Random</ButtonVue>
-        <ButtonVue @click="store.$reset">Reset</ButtonVue>
+        <ButtonVue @click="() => store.random()">Random</ButtonVue>
+        <ButtonVue @click="() => store.$reset()">Reset</ButtonVue>
     </div>
     <div>
         {{ store.whoClicked }}
@@ -14,7 +14,7 @@
 </template>
 <script setup lang="ts">
 import ButtonVue from './Button.vue';
-import { useStore } from '../store/cart';
+import { useStore } from '../store/main';
 import { storeToRefs } from 'pinia';
 const store = useStore()
 

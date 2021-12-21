@@ -6,7 +6,7 @@
 <style scoped>
 .btn {
     padding: 15px 20px;
-    background-color: green;
+    background-color: #41b883;
     color: white;
     box-sizing: border-box;
     border: none;
@@ -20,8 +20,8 @@
 
 .btn:hover {
     background-color: white;
-    color: green;
-    border: solid 1px green;
-    border: solid 1px green;
+    color: #35495E;
+    border: solid 1px #35495E;
+    border: solid 1px #35495E;
 }
 </style>
